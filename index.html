@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assests/front/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="./assests/front/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/base.css">
+    <title>Clickbuy clone</title>
+</head>
+<body>
+    <div id="app"  >
+        <div class="header">
+            <div class="grid wide">
+                <div class="header-container">
+                    <div class="header-logo">
+                        <a href="" class="header-logo-link">
+                            <img id="logo" src="./assests/img/nabi.png" alt="Wp mobile" title="wp mobile">
+                        </a>
+                    </div>
+
+                    <div class="header-location">
+                        <i class="location-icon ti-location-pin"></i>
+                        <div class="location-name">
+                            <span class="location-name-title">Xem giá tại
+                                <br>
+                                <strong class="location-name-city">Hà Nội</strong>
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </div>
+
+                        <div class="location-list">
+                            <a href="" class="location-list-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Hồ Chí Minh
+                            </a>
+                            <a href="" class="location-list-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Đà Nẵng
+                            </a>
+                            <a href="" class="location-list-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Hải Phòng
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="header-search">
+                        <form action="" id="form-search">
+                            
+                                <input class="form-search__input" placeholder="Bạn cần tìm gì..." type="text">
+                                <button class="form-search__btn" >
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            
+                        </form>
+                    </div>
+
+
+                    <div class="header-menu">
+                        <ul class="header-menu-list">
+                            <li class="header-menu__item">
+                                <a href="tel:0919295123" class="header-menu__item-link">
+                                    <div class="menu-icon">
+                                        <i class="ti-mobile"></i>
+                                    </div>
+                                    <div class="menu-name">
+                                        <p class="title">Gọi mua hàng
+                                            <br>
+                                            <strong>0919295123</strong>
+                                        </p>
+                                    </div>
+                                </a>
+                               
+                             </li>
+
+                             <li class="header-menu__item">
+                                <a href="#" class="header-menu__item-link">
+                                    <div class="menu-icon">
+                                        <i class="ti-location-pin"></i>
+                                    </div>
+                                    <div class="menu-name">
+                                        <p class="title">Cửa hàng<br>gần bạn</p>
+                                    </div>
+                                </a>
+                               
+                             </li>
+
+                             <li class="header-menu__item">
+                                <a href="#" class="header-menu__item-link">
+                                    <div class="menu-icon">
+                                        <i class="ti-truck"></i>
+                                    </div>
+                                    <div class="menu-name">
+                                        <p class="title">Tra cứu<br>đơn hàng</p>
+                                    </div>
+                                </a>
+                               
+                             </li>
+
+                             <li class="header-menu__item">
+                                <a href="#" class="header-menu__item-link">
+                                    <div class="menu-icon">
+                                        <i class="ti-shopping-cart-full"></i>
+                                    </div>
+                                    <div class="menu-name">
+                                        <p class="title">Giỏ<br>hàng</p>
+                                    </div>
+                                </a>
+                               
+                             </li>
+                            
+                             <li class="header-menu__item user">
+                                <a href="#" class="header-menu__item-user">
+                                    <div class="menu-user">
+                                        <i class="icon-user ti-user"></i>
+                                    </div>
+                                    <div class="login">
+                                        <p class="title-user">Đăng nhập</p>
+                                    </div>
+                                </a>
+                               
+                             </li>
+                            
+                        </ul>
+
+                    </div>
+            </div>
+            
+            </div>
+        </div>
+
+        <!-- Menu & Banner -->
+        <div class="container" >
+            <div class="grid wide">
+
+                <!-- Category and slider and bannerSub  -->
+                <div class="menu_sl">
+                    <div class="row">
+
+                        <!-- Danh mục sản phẩm -->
+                        <div class="col c-2">
+                            <div class="category">
+                                <ul class="category-list">
+                                    <li class="category-item">
+                                        <a href="" class="category-item-link">
+                                            <i class="category-icon fas fa-mobile-alt"></i>
+                                            Điện thoại
+                                            <i class="category-icon-right fas fa-chevron-right"></i>
+                                        </a>
+                                        <ul class="category-sub">
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Iphone
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Samsung
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Xiaomi
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    OPPO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    ASUS
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    VIVO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Vsmart
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    POCO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Nokia
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Realme
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="category-item">
+                                        <a href="" class="category-item-link">
+                                            <i class="category-icon fas fa-laptop-code"></i>
+                                            Laptop,PC,Màn hình
+                                            <i class="category-icon-right fas fa-chevron-right"></i>
+                                        </a>
+
+                                        <ul class="category-sub">
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Apple
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Samsung
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Xiaomi
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Hp
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    ASUS
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Acer
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Lenovo
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Thinkpad
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    LG
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Dell
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="category-item">
+                                        <a href="" class=" category-item-link">
+                                            <i class=" category-icon fas fa-tablet-alt"></i>
+                                            <span class="category-item-name">Tablet</span>
+                                            <i class="category-icon-right fas fa-chevron-right"></i>
+                                        </a>
+
+                                        <ul class="category-sub">
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Iphone
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Samsung
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Xiaomi
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    OPPO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    ASUS
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    VIVO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Vsmart
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    POCO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Nokia
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Realme
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="category-item">
+                                        <a href="" class=" category-item-link">
+                                            <i class="category-icon fas fa-headphones-alt"></i>
+                                            <span class="category-item-name">Âm thanh</span>
+                                            <i class="category-icon-right fas fa-chevron-right"></i>
+                                            
+                                        </a>
+
+                                        <ul class="category-sub">
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Iphone
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Samsung
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Xiaomi
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    OPPO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    ASUS
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    VIVO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Vsmart
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    POCO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Nokia
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Realme
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="category-item">
+                                        <a href="" class=" category-item-link">
+                                            <i class="category-icon far fa-clock"></i>
+                                            <span class="category-item-name">Đồng hồ</span>
+                                            <i class="category-icon-right fas fa-chevron-right"></i>
+                                            
+                                        </a>
+
+                                        <ul class="category-sub">
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Iphone
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Samsung
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Xiaomi
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    OPPO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    ASUS
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    VIVO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Vsmart
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    POCO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Nokia
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Realme
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="category-item">
+                                        <a href="" class=" category-item-link">
+                                            <i class="category-icon fas fa-home"></i>
+                                            <span class="category-item-name">Nhà thông minh</span>
+                                            <i class="category-icon-right fas fa-chevron-right"></i>
+                                            
+                                        </a>
+
+                                        <ul class="category-sub">
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Iphone
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Samsung
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Xiaomi
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    OPPO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    ASUS
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    VIVO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Vsmart
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    POCO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Nokia
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Realme
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="category-item">
+                                        <a href="" class=" category-item-link">
+                                            <i class="category-icon fas fa-keyboard"></i>
+                                            <span class="category-item-name">Phụ kiện</span>
+                                            <i class="category-icon-right fas fa-chevron-right"></i>
+                                            
+                                        </a>
+
+                                        <ul class="category-sub">
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Iphone
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Samsung
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Xiaomi
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    OPPO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    ASUS
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    VIVO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Vsmart
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    POCO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Nokia
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Realme
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="category-item">
+                                        <a href="" class=" category-item-link">
+                                            <i class="category-icon fas fa-sync"></i>
+                                            <span class="category-item-name">Thu cũ</span>
+                                            <i class="category-icon-right fas fa-chevron-right"></i>
+                                            
+                                        </a>
+
+                                        <ul class="category-sub">
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Iphone
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Samsung
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Xiaomi
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    OPPO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    ASUS
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    VIVO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Vsmart
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    POCO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Nokia
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Realme
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="category-item">
+                                        <a href="" class=" category-item-link">
+                                            <i class="category-icon fas fa-cube"></i>
+                                            <span class="category-item-name">Hàng cũ</span>
+                                            <i class="category-icon-right fas fa-chevron-right"></i>
+                                            
+                                        </a>
+
+                                        <ul class="category-sub">
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Iphone
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Samsung
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Xiaomi
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    OPPO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    ASUS
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    VIVO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Vsmart
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    POCO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Nokia
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Realme
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="category-item">
+                                        <a href="" class=" category-item-link">
+                                            <i class="category-icon fas fa-sim-card"></i>
+                                            <span class="category-item-name">Sim thẻ</span>
+                                            <i class="category-icon-right fas fa-chevron-right"></i>
+                                            
+                                        </a>
+
+                                        <ul class="category-sub">
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Iphone
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Samsung
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Xiaomi
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    OPPO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    ASUS
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    VIVO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Vsmart
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    POCO
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Nokia
+                                                </a>
+                                            </li>
+                                            <li class="category-sub-item">
+                                                <a class="sub-item-link" href="">
+                                                    Realme
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="category-item">
+                                        <a href="" class=" category-item-link">
+                                            <i class="category-icon fas fa-newspaper"></i>
+                                            <span class="category-item-name">Tin công nghệ</span>
+                                            
+                                            
+                                        </a>
+                                    </li>
+
+                                    <li class="category-item">
+                                        <a href="" class=" category-item-link">
+                                            <i class="category-icon fas fa-bullhorn"></i>
+                                            <span class="category-item-name">Khuyến mại</span>
+                                            
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Slider -->
+                        <div class="col c-7">
+                            <div class="slider-box">
+                                <div class="slider">
+                                    <div class="slide1">
+                                        <div class="item" >
+                                            <a href="">
+                                                <img src="./assests/img/slider1.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item" >
+                                            <a href="">
+                                                <img src="./assests/img/slider2.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item" >
+                                            <a href="">
+                                                <img src="./assests/img/slider3.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item" >
+                                            <a href="">
+                                                <img src="./assests/img/slider4.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="item" >
+                                            <a href="">
+                                                <img src="./assests/img/slider5.webp" alt="">
+                                            </a>
+                                        </div>  
+                                        <div class="item" >
+                                            <a href="">
+                                                <img src="./assests/img/slider6.webp" alt="">
+                                            </a>
+                                        </div>               
+                                    </div>                               
+                                    <button  class="slick-prev">Previous</button>
+                                    <button  class="slick-next">Next</button>                               
+                                </div>
+                                <div class="slide2">
+                                    <div class="slide-content" >
+                                        <p class="slide-content-title">
+                                            <strong>APPLE WATCH</strong>                                          
+                                            Giảm giá tới 30%
+                                        </p>
+                                    </div>
+                                    <div class="slide-content" >
+                                        <p class="slide-content-title">
+                                            <strong>REDMI BUDS 3</strong>
+                                            Khuyến mãi khủng
+                                        </p>
+                                    </div>
+                                    <div class="slide-content" >
+                                        <p class="slide-content-title">
+                                            <strong>ZENBOOK FILIP 13</strong>
+                                            Laptop thế hệ mới
+                                        </p>
+                                    </div>
+                                    <div class="slide-content" >
+                                        <p class="slide-content-title">
+                                            <strong>GALAXY Z FILIP3</strong>
+                                            Đẳng cấp thời thượng
+                                        </p>
+                                    </div>
+                                    <div class="slide-content" >
+                                        <p class="slide-content-title">
+                                            <strong>MÁY LỌC VSMART</strong>
+                                            Quà tết ý nghĩa
+                                        </p>
+                                    </div>
+                                    <div class="slide-content" >
+                                        <p class="slide-content-title">
+                                            <strong>REDMI NOTE 11</strong>
+                                            Hot sale giảm sốc
+                                        </p>
+                                    </div>
+                                                                 
+                                </div>
+                            </div>
+                           
+                        </div>
+
+                        <!-- Banner sub -->
+                        <div class="col c-3">
+                            <div class="banner-sub">
+                                <a href="" class="banner-sub-item">
+                                    <img src="./assests/img/banner1.webp" alt="">
+                                </a>
+                                <a href="" class="banner-sub-item">
+                                    <img src="./assests/img/banner2.webp" alt="">
+                                </a>
+                                <a href="" class="banner-sub-item">
+                                    <img src="./assests/img/banner3.webp" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Danh sách các sản phẩm -->
+                <div class="mobile">
+                    <h2 class="mobile-title"><a class="mobile-title-link" href="">ĐIỆN THOẠI NỔI BẬT NHẤT</a></h2>
+
+                    <div class="mobile-pro">
+                        <div class="row">
+                            <div class="col c-2-2 mg-20">
+                                <a href="" class="product-item">
+                                    <div class="product-item__img" style="background-image:url(https://image.cellphones.com.vn/220x/media/catalog/product/s/m/sm-f926_zfold3_5g_openback_phantomsilver_210611.jpg)"></div>
+                                    <h4 class="product-item__name">iPhone 13 Pro Max 256GB I Chính hãng VN/A</h4>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-present">299.000đ</span>
+                                        <span class="product-item__price-old">500.000đ</span>
+                                    </div>
+
+                                    <!-- Phần option -->
+                                    <div class="product-option">
+                                        <p class="product-option-name">
+                                            [HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ và 1 km khác
+                                        </p>
+                                    </div>
+
+                                    <div class="home-product-item__favorite">
+                                        <span class="home-product-item__favorite-like">
+                                          <i class="home-product-item__favorite-like-icon-no far fa-heart"></i>
+                                          <i class="home-product-item__favorite-like-icon-ok fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__favorite-evaluate">
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__favorite-sold">Đã bán 30</span>
+                                    </div>
+
+                                    <!-- Mác sale -->
+                                    <div class="home-product-item__label">
+                                        <span>
+                                          <i class="fas fa-check"></i>
+                                          Giảm 30%
+                                        </span>
+                                      </div>
+                                </a>
+                            </div>
+                            <div class="col c-2-2 mg-20">
+                                <a href="" class="product-item">
+                                    <div class="product-item__img" style="background-image:url(https://image.cellphones.com.vn/220x/media/catalog/product/s/m/sm-f926_zfold3_5g_openback_phantomsilver_210611.jpg)"></div>
+                                    <h4 class="product-item__name">iPhone 13 Pro Max 256GB I Chính hãng VN/A</h4>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-present">299.000đ</span>
+                                        <span class="product-item__price-old">500.000đ</span>
+                                    </div>
+                                    
+                                    <!-- Phần option -->
+                                    <!-- <div class="product-option">
+                                        <p class="product-option-name">
+                                            [HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ và 1 km khác
+                                        </p>
+                                    </div> -->
+
+                                    <div class="home-product-item__favorite">
+                                        <span class="home-product-item__favorite-like">
+                                          <i class="home-product-item__favorite-like-icon-no far fa-heart"></i>
+                                          <i class="home-product-item__favorite-like-icon-ok fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__favorite-evaluate">
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__favorite-sold">Đã bán 30</span>
+                                    </div>
+
+                                    <!-- Mác sale -->
+                                    <div class="home-product-item__label">
+                                        <span>
+                                          <i class="fas fa-check"></i>
+                                          Giảm 30%
+                                        </span>
+                                      </div>
+                                </a>
+                            </div>
+                            <div class="col c-2-2 mg-20">
+                                <a href="" class="product-item">
+                                    <div class="product-item__img" style="background-image:url(https://image.cellphones.com.vn/220x/media/catalog/product/s/m/sm-f926_zfold3_5g_openback_phantomsilver_210611.jpg)"></div>
+                                    <h4 class="product-item__name">iPhone 13 Pro Max 256GB I Chính hãng VN/A</h4>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-present">299.000đ</span>
+                                        <span class="product-item__price-old">500.000đ</span>
+                                    </div>
+
+                                    <!-- Phần option -->
+                                    <div class="product-option">
+                                        <p class="product-option-name">
+                                            [HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ và 1 km khác
+                                        </p>
+                                    </div>
+
+                                    <div class="home-product-item__favorite">
+                                        <span class="home-product-item__favorite-like">
+                                          <i class="home-product-item__favorite-like-icon-no far fa-heart"></i>
+                                          <i class="home-product-item__favorite-like-icon-ok fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__favorite-evaluate">
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__favorite-sold">Đã bán 30</span>
+                                    </div>
+
+                                    <!-- Mác sale -->
+                                    <div class="home-product-item__label">
+                                        <span>
+                                          <i class="fas fa-check"></i>
+                                          Giảm 30%
+                                        </span>
+                                      </div>
+                                </a>
+                            </div>
+                            <div class="col c-2-2 mg-20">
+                                <a href="" class="product-item">
+                                    <div class="product-item__img" style="background-image:url(https://image.cellphones.com.vn/220x/media/catalog/product/s/m/sm-f926_zfold3_5g_openback_phantomsilver_210611.jpg)"></div>
+                                    <h4 class="product-item__name">iPhone 13 Pro Max 256GB I Chính hãng VN/A</h4>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-present">299.000đ</span>
+                                        <span class="product-item__price-old">500.000đ</span>
+                                    </div>
+                                    
+                                    <!-- Phần option -->
+                                    <!-- <div class="product-option">
+                                        <p class="product-option-name">
+                                            [HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ và 1 km khác
+                                        </p>
+                                    </div> -->
+
+                                    <div class="home-product-item__favorite">
+                                        <span class="home-product-item__favorite-like">
+                                          <i class="home-product-item__favorite-like-icon-no far fa-heart"></i>
+                                          <i class="home-product-item__favorite-like-icon-ok fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__favorite-evaluate">
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__favorite-sold">Đã bán 30</span>
+                                    </div>
+
+                                    <!-- Mác sale -->
+                                    <div class="home-product-item__label">
+                                        <span>
+                                          <i class="fas fa-check"></i>
+                                          Giảm 30%
+                                        </span>
+                                      </div>
+                                </a>
+                            </div>
+                            <div class="col c-2-2 mg-20">
+                                <a href="" class="product-item">
+                                    <div class="product-item__img" style="background-image:url(https://image.cellphones.com.vn/220x/media/catalog/product/s/m/sm-f926_zfold3_5g_openback_phantomsilver_210611.jpg)"></div>
+                                    <h4 class="product-item__name">iPhone 13 Pro Max 256GB I Chính hãng VN/A</h4>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-present">299.000đ</span>
+                                        <span class="product-item__price-old">500.000đ</span>
+                                    </div>
+
+                                    <!-- Phần option -->
+                                    <div class="product-option">
+                                        <p class="product-option-name">
+                                            [HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ và 1 km khác
+                                        </p>
+                                    </div>
+
+                                    <div class="home-product-item__favorite">
+                                        <span class="home-product-item__favorite-like">
+                                          <i class="home-product-item__favorite-like-icon-no far fa-heart"></i>
+                                          <i class="home-product-item__favorite-like-icon-ok fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__favorite-evaluate">
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__favorite-sold">Đã bán 30</span>
+                                    </div>
+
+                                    <!-- Mác sale -->
+                                    <div class="home-product-item__label">
+                                        <span>
+                                          <i class="fas fa-check"></i>
+                                          Giảm 30%
+                                        </span>
+                                      </div>
+                                </a>
+                            </div>
+                            <div class="col c-2-2 mg-20">
+                                <a href="" class="product-item">
+                                    <div class="product-item__img" style="background-image:url(https://image.cellphones.com.vn/220x/media/catalog/product/s/m/sm-f926_zfold3_5g_openback_phantomsilver_210611.jpg)"></div>
+                                    <h4 class="product-item__name">iPhone 13 Pro Max 256GB I Chính hãng VN/A</h4>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-present">299.000đ</span>
+                                        <span class="product-item__price-old">500.000đ</span>
+                                    </div>
+                                    
+                                    <!-- Phần option -->
+                                    <!-- <div class="product-option">
+                                        <p class="product-option-name">
+                                            [HOT] Thu cũ lên đời giá cao - Thủ tục nhanh - Trợ giá lên tới 1.000.000đ và 1 km khác
+                                        </p>
+                                    </div> -->
+
+                                    <div class="home-product-item__favorite">
+                                        <span class="home-product-item__favorite-like">
+                                          <i class="home-product-item__favorite-like-icon-no far fa-heart"></i>
+                                          <i class="home-product-item__favorite-like-icon-ok fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__favorite-evaluate">
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__favorite-sold">Đã bán 30</span>
+                                    </div>
+
+                                    <!-- Mác sale -->
+                                    <div class="home-product-item__label">
+                                        <span>
+                                          <i class="fas fa-check"></i>
+                                          Giảm 30%
+                                        </span>
+                                      </div>
+                                </a>
+                            </div>
+                            <div class="col c-2-2 mg-20">
+                                <a href="" class="product-item">
+                                    <div class="product-item__img" style="background-image:url(https://image.cellphones.com.vn/220x/media/catalog/product/s/m/sm-f926_zfold3_5g_openback_phantomsilver_210611.jpg)"></div>
+                                    <h4 class="product-item__name">iPhone 13 Pro Max 256GB I Chính hãng VN/A</h4>
+                                    <div class="product-item__price">
+                                        <span class="product-item__price-present">299.000đ</span>
+                                        <span class="product-item__price-old">500.000đ</span>
+                                    </div>
+                                    
+                                    <!-- Phần option -->
+                                    <div class="product-option">
+                                        <p class="product-option-name">
+                                            [HOT] Thu cũ lên đời giá cao - Thủ tục nhanh 
+                                        </p>
+                                    </div>
+
+                                    <div class="home-product-item__favorite">
+                                        <span class="home-product-item__favorite-like">
+                                          <i class="home-product-item__favorite-like-icon-no far fa-heart"></i>
+                                          <i class="home-product-item__favorite-like-icon-ok fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__favorite-evaluate">
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="home-product-item__star fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                          <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__favorite-sold">Đã bán 30</span>
+                                    </div>
+
+                                    <!-- Mác sale -->
+                                    <div class="home-product-item__label">
+                                        <span>
+                                          <i class="fas fa-check"></i>
+                                          Giảm 30%
+                                        </span>
+                                      </div>
+                                </a>
+                            </div>
+                            
+                            
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Danh sách sản phẩm -->
+        <!-- <div class="products">
+            <div class="grid wide">
+                
+            </div>
+
+        </div> -->
+        <div class="footer">
+            
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./main.js" ></script>
+</body>
+</html>
